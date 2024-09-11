@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-mybatis-multi-datasource
+
+datasource:
+  database:
+    jdbcUrl: jdbc:h2:mem:central;INIT=RUNSCRIPT FROM 'classpath:/sql/db-init-script.sql'
+    driverClassName: org.h2.Driver
+
+logging:
+  level:
+    com.itkachenko.springmybatisdynamicsql.repositories.BooksRepository: DEBUG
